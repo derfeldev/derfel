@@ -157,7 +157,7 @@ input:focus, textarea:focus, select:focus {
   width: 100%;
   padding: .8rem 0;
   border-radius: 2rem;
-  background-color: #4f7df3;
+  background-color: #CA3433;
   color: white;
   font-size: 14px;
   box-shadow: 6px 8px 10px rgba(170, 170, 170, 0.5);
@@ -193,12 +193,12 @@ footer .social .social-link {
   padding: .5rem .5rem .3rem;
   border-radius: 50%;
   border: 1px solid rgba(150, 150, 150, 0.4);
-  color: #4f7df3;
+  color: #CA3433;
   margin: 0 .5rem 1rem;
   font-size: 18px;
 }
 
 footer .social .social-link:hover {
   color: white;
-  background-color: #4f7df3;
+  background-color: #CA3433;
 }
