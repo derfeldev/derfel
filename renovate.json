@@ -11,5 +11,7 @@
 	],
 	"labels": [
 		"dependencies"
-	]
+	],
+    "osvVulnerabilityAlerts": true,
+	"dependencyDashboardOSVVulnerabilitySummary": "all"
 }
