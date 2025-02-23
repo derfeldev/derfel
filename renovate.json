@@ -15,13 +15,15 @@
     	"osvVulnerabilityAlerts": true,
 	"dependencyDashboardOSVVulnerabilitySummary": "all"
 
-	"fileMatch": [
-	  "\\.html?$"
-	],
-	"versioning": "semver",
-	"digest": {
-	  "enabled": false
-	},
-	"pinDigests": false
-	
+	{
+		"fileMatch": [
+		  "\\.html?$"
+		],
+		"versioning": "semver",
+		"digest": {
+		  "enabled": false
+		},
+		"pinDigests": false
+	  }
+
 }
