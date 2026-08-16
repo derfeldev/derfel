@@ -49,14 +49,14 @@ input:focus, textarea:focus, select:focus {
   }
 }
 
-.container .header h2 {
+.container .header h1 {
   text-align: center;
   font-weight: 300;
   margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
-  .container .header h2 {
+  .container .header h1 {
     font-size: 2rem;
   }
 }
@@ -190,12 +190,22 @@ footer .social {
 }
 
 footer .social .social-link {
-  padding: .5rem .5rem .3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
   border-radius: 50%;
   border: 1px solid rgba(150, 150, 150, 0.4);
   color: #CA3433;
   margin: 0 .5rem 1rem;
-  font-size: 18px;
+}
+
+footer .social .social-link svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
 
 footer .social .social-link:hover {

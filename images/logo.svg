@@ -1,0 +1,41 @@
+<!-- Save as derfel-logo.svg or paste directly into HTML -->
+<svg class="derfel-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="derfelTitle derfelDesc">
+  <title id="derfelTitle">derfel — part of DIMOV</title>
+  <desc id="derfelDesc">Minimal logo: bold rounded lowercase "derfel" centered in an incomplete circle. Smaller text "part of DIMOV" below. Colors controlled by CSS.</desc>
+
+  <style>
+    /* Two ways to control color:
+       1) Using the color property (preferred): .derfel-logo { color: #b30000; }
+       2) Or using CSS variable: .derfel-logo { --logo-color: #b30000; color: var(--logo-color); }
+       Elements use fill: currentColor and stroke: currentColor so changing .derfel-logo color changes the whole mark.
+    */
+
+    .derfel-logo { color: #b30000; } /* default deep red; override in your CSS */
+    .bg { fill: black; }
+    .circle { fill: none; stroke: currentColor; stroke-width: 12; stroke-linecap: round; stroke-linejoin: round;
+              stroke-dasharray: 520 220; /* creates an "incomplete" circle (dash + gap) */
+              transform-origin: 400px 360px; /* center for transforms if needed */ }
+    .wordmark { font-family: "Poppins", "Nunito", "Arial Rounded MT Bold", "Helvetica", "sans-serif";
+                font-weight: 700; font-size: 160px; fill: currentColor; text-anchor: middle; dominant-baseline: middle;
+                letter-spacing: -6px; }
+    .subline { font-family: "Poppins", "Nunito", "Helvetica", "sans-serif";
+               font-weight: 500; font-size: 36px; fill: currentColor; text-anchor: middle; dominant-baseline: hanging;
+               text-transform: lowercase; }
+    /* Ensure text is lowercase visually */
+    .wordmark, .subline { text-transform: lowercase; }
+  </style>
+
+  <!-- black background -->
+  <rect class="bg" x="0" y="0" width="800" height="800" />
+
+  <!-- incomplete circle (center slightly above exact center to visually balance with subline) -->
+  <g transform="translate(0, -20)">
+    <circle class="circle" cx="400" cy="360" r="220" />
+  </g>
+
+  <!-- main wordmark -->
+  <text class="wordmark" x="400" y="360">derfel</text>
+
+  <!-- subline below main text -->
+  <text class="subline" x="400" y="420">part of DIMOV</text>
+</svg>
