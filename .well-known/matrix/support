@@ -1,0 +1,10 @@
+{
+    "contacts": [
+        {
+            "email_address": "help@dimov.xyz",
+            "matrix_id": "@pavel:derfel.dev",
+            "role": "m.role.admin"
+        }
+    ],
+    "support_page": "https://www.dimov.xyz/matrix-docs/welcome/"
+}
