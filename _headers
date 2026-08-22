@@ -3,3 +3,6 @@
 
 /.well-known/matrix/client
   Content-Type: application/json
+
+/.well-known/matrix/support
+  Content-Type: application/json
