@@ -8,9 +8,12 @@
 
 /.well-known/matrix/server
   Content-Type: application/json
+  Access-Control-Allow-Origin: *
 
 /.well-known/matrix/client
   Content-Type: application/json
+  Access-Control-Allow-Origin: *
 
 /.well-known/matrix/support
   Content-Type: application/json
+  Access-Control-Allow-Origin: *
