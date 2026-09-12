@@ -1,5 +1,12 @@
-$button-color:hsl(223, 87%, 63%);
+$button-color:#3A63D0;
 $border-color:hsl(223, 100%, 88%);
 $error:hsl(354, 100%, 66%);
-$text-color1:hsl(0, 0%, 59%);
-$text-color2:hsl(209, 33%, 12%);
+$text-color1:#6B6B67;
+$text-color2:#3A63D0;
+$core:#4F7DF3;
+
+// dark mode (prefers-color-scheme)
+$bg-dark:#141414;
+$button-color-dark:#7AA2F7;
+$text-color1-dark:#8C8C87;
+$border-color-dark:#6B6B67;

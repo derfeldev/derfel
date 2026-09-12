@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="none" role="img" aria-label="DERFEL">
+  <style>
+    .ink { stroke: #1A1A1A; }
+    .core { fill: #4F7DF3; }
+    @media (prefers-color-scheme: dark) {
+      .ink { stroke: #E8E8E5; }
+      .core { fill: #7AA2F7; }
+    }
+  </style>
+  <g class="ink" stroke-width="1.75" stroke-linecap="round">
+    <path d="M11 4v5"></path>
+    <path d="M11 15v5"></path>
+    <path d="M11 7.5c2.49 0 4.5 2.02 4.5 4.5s-2.01 4.5-4.5 4.5"></path>
+  </g>
+  <circle class="core" cx="11" cy="12" r="1.6"></circle>
+</svg>

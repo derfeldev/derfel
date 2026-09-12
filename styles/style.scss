@@ -1,15 +1,20 @@
 @import "colors";
-@import url('https://fonts.bunny.net/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+@import url('https://fonts.bunny.net/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
+html{
+    color-scheme: light dark;
+}
 body{
     font-size: 16px;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Geist', sans-serif;
     color:$text-color1;
+    background-color: #FFFFFF;
+    transition: background-color .3s ease, color .3s ease;
 }
 input,button{
     text-decoration: none;
@@ -50,7 +55,13 @@ input:focus, textarea:focus, select:focus{
                 font-size: 2rem;
             }
         }
-        b,p{
+        b{
+            font-family: 'JetBrains Mono', ui-monospace, monospace;
+            font-weight: 500;
+            letter-spacing: .12em;
+            color:$text-color2;
+        }
+        p{
             color:$text-color2;
         }
         p{
@@ -61,8 +72,16 @@ input:focus, textarea:focus, select:focus{
                 font-size: 20px;
             }
         }
+        .brand-tag{
+            font-family: 'JetBrains Mono', ui-monospace, monospace;
+            font-size: 11px;
+            font-weight: 400;
+            letter-spacing: .16em;
+            color: $text-color1;
+            margin-top: -.5rem;
+        }
     }
-    form{ 
+    form{
         width:70%;     
         display:flex;
         flex-direction: column;
@@ -155,24 +174,51 @@ footer{
             display:inline-flex;
             align-items: center;
             justify-content: center;
-            width:2.25rem;
-            height:2.25rem;
+            width:2.75rem;
+            height:2.75rem;
             border-radius: 50%;
-            border:1px solid hsla(0, 0%, 59%,0.4);
+            border:1px solid #8C8C87;
             color:$button-color;
             margin:0 .5rem 1rem;
             svg{
                 display:block;
-                width:18px;
-                height:18px;
+                width:20px;
+                height:20px;
                 fill:currentColor;
             }
-            &:hover{
+            &:hover, &:focus-visible{
                 color:white;
                 background-color: $button-color;
+                outline: 2px solid $button-color;
+                outline-offset: 2px;
             }
         }
-        
+
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $bg-dark;
+        color: $text-color1-dark;
+    }
+    .container .header b {
+        color: $button-color-dark;
+    }
+    .container .header p {
+        color: $button-color-dark;
+    }
+    .container .header .brand-tag {
+        color: $text-color1-dark;
+    }
+    footer .social .social-link {
+        border-color: $border-color-dark;
+        color: $button-color-dark;
+        &:hover, &:focus-visible {
+            color: $bg-dark;
+            background-color: $button-color-dark;
+            outline-color: $button-color-dark;
+        }
     }
 }
 
