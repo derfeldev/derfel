@@ -12,12 +12,12 @@
       .core { animation: none; }
     }
   </style>
-  <g stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round">
+  <g stroke="#E8E8E5" stroke-width="1.5" stroke-linecap="round">
     <path d="M12 12v20"></path>
     <path d="M34 12v20"></path>
     <path d="M22 7v12"></path>
     <path d="M22 25v12"></path>
     <path d="M22 14c3.31 0 6 3.58 6 8s-2.69 8-6 8"></path>
   </g>
-  <circle class="core" cx="22" cy="22" r="1.7" fill="#4F7DF3"></circle>
+  <circle class="core" cx="22" cy="22" r="1.7" fill="#7AA2F7"></circle>
 </svg>

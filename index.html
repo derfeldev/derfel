@@ -8,7 +8,8 @@
     <meta name="description" content="Discover DERFEL's open-source solutions. Maximize efficiency, lower costs, and integrate seamlessly with DIMOV's expertise. Explore today!">
     <link rel="canonical" href="https://derfel.dev/">
 
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="/images/favicon-dark.svg" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -19,7 +20,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="DERFEL">
 
-    <link rel="preload" as="image" href="/images/derfel-mark.svg">
+    <link rel="preload" as="image" href="/images/derfel-mark.svg" media="(prefers-color-scheme: light)">
+    <link rel="preload" as="image" href="/images/derfel-mark-dark.svg" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="styles/style.css">
 
     <meta property="og:site_name" content="DERFEL">
@@ -77,7 +79,10 @@
 <body>
     <div class="wrapper">
         <main class="container">
-            <img src="images/derfel-mark.svg" alt="DERFEL logo" class="logo" width="400" height="400" fetchpriority="high">
+            <picture>
+                <source srcset="images/derfel-mark-dark.svg" media="(prefers-color-scheme: dark)">
+                <img src="images/derfel-mark.svg" alt="DERFEL logo" class="logo" width="400" height="400" fetchpriority="high">
+            </picture>
             <div class="header">
                 <h1><b>DERFEL</b> | Open Source Solutions</h1>
                 <p class="brand-tag">PART OF DIMOV</p>
