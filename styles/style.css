@@ -205,6 +205,11 @@ footer {
   font-size: 14px;
 }
 
+footer small {
+  display: block;
+  text-align: center;
+}
+
 footer .social {
   display: flex;
   justify-content: center;
@@ -238,6 +243,146 @@ footer .social .social-link:focus-visible {
   outline-offset: 2px;
 }
 
+.footer-links {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: .75rem;
+}
+
+.footer-links a {
+  color: #6B6B67;
+  text-decoration: underline;
+}
+
+.footer-links span {
+  color: #6B6B67;
+  margin: 0 .5em;
+}
+
+/* Content pages (privacy policy, terms of service) */
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: .6em;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 0;
+  text-decoration: none;
+}
+
+.site-header img {
+  width: 32px;
+  height: 32px;
+}
+
+.site-header .wordmark {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-weight: 500;
+  letter-spacing: .12em;
+  font-size: 14px;
+  color: #3A63D0;
+  text-decoration: none;
+}
+
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+  line-height: 1.65;
+}
+
+.page h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -.01em;
+  margin-bottom: .4rem;
+  color: #1A1A1A;
+}
+
+.page .updated {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: .7rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #6B6B67;
+  margin-bottom: 2.5rem;
+}
+
+.page h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 2.5rem 0 .75rem;
+  color: #1A1A1A;
+}
+
+.page h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.5rem 0 .5rem;
+  color: #1A1A1A;
+}
+
+.page p, .page ul, .page ol {
+  margin-bottom: 1rem;
+}
+
+.page ul, .page ol {
+  padding-left: 1.25rem;
+}
+
+.page li {
+  margin-bottom: .4rem;
+}
+
+.page a {
+  color: #3A63D0;
+}
+
+.page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: .5rem 0 1.5rem;
+  font-size: .88rem;
+}
+
+.page th, .page td {
+  text-align: left;
+  padding: .55rem .75rem;
+  border-bottom: 1px solid #E4E4E0;
+  vertical-align: top;
+}
+
+.page th {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: .68rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #6B6B67;
+}
+
+.page code {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: .85em;
+  background: #F6F6F4;
+  padding: .15em .4em;
+  border-radius: 4px;
+}
+
+.page .notice {
+  background: #F6F6F4;
+  border-left: 3px solid #3A63D0;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  font-size: .9rem;
+}
+
+.page .see-also {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #E4E4E0;
+  font-size: .9rem;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #141414;
@@ -266,5 +411,42 @@ footer .social .social-link:focus-visible {
     color: #141414;
     background-color: #7AA2F7;
     outline-color: #7AA2F7;
+  }
+
+  .site-header .wordmark {
+    color: #7AA2F7;
+  }
+
+  .page h1, .page h2, .page h3 {
+    color: #E8E8E5;
+  }
+
+  .page .updated {
+    color: #8C8C87;
+  }
+
+  .page a {
+    color: #7AA2F7;
+  }
+
+  .page th, .page td {
+    border-bottom-color: #2B2B2B;
+  }
+
+  .page code {
+    background: #191919;
+  }
+
+  .page .notice {
+    background: #191919;
+    border-left-color: #7AA2F7;
+  }
+
+  .page .see-also {
+    border-top-color: #2B2B2B;
+  }
+
+  .footer-links a {
+    color: #8C8C87;
   }
 }

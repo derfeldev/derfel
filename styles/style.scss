@@ -166,6 +166,10 @@ input:focus, textarea:focus, select:focus{
 footer{
     margin-bottom: 1rem;
     font-size: 14px;
+    small {
+        display: block;
+        text-align: center;
+    }
     .social{
         display:flex;
         justify-content: center;
@@ -197,6 +201,128 @@ footer{
     }
 }
 
+.footer-links {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: .75rem;
+    a {
+        color: $text-color1;
+        text-decoration: underline;
+    }
+    span {
+        color: $text-color1;
+        margin: 0 .5em;
+    }
+}
+
+// Content pages (privacy policy, terms of service)
+.site-header {
+    display: flex;
+    align-items: center;
+    gap: .6em;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 0;
+    text-decoration: none;
+    img {
+        width: 32px;
+        height: 32px;
+    }
+    .wordmark {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-weight: 500;
+        letter-spacing: .12em;
+        font-size: 14px;
+        color: $button-color;
+        text-decoration: none;
+    }
+}
+
+.page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+    line-height: 1.65;
+    h1 {
+        font-size: 1.75rem;
+        font-weight: 600;
+        letter-spacing: -.01em;
+        margin-bottom: .4rem;
+        color: $text-color2-ink;
+    }
+    .updated {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: .7rem;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: $text-color1;
+        margin-bottom: 2.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 2.5rem 0 .75rem;
+        color: $text-color2-ink;
+    }
+    h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 1.5rem 0 .5rem;
+        color: $text-color2-ink;
+    }
+    p, ul, ol {
+        margin-bottom: 1rem;
+    }
+    ul, ol {
+        padding-left: 1.25rem;
+    }
+    li {
+        margin-bottom: .4rem;
+    }
+    a {
+        color: $button-color;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: .5rem 0 1.5rem;
+        font-size: .88rem;
+    }
+    th, td {
+        text-align: left;
+        padding: .55rem .75rem;
+        border-bottom: 1px solid $border-color-light;
+        vertical-align: top;
+    }
+    th {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: .68rem;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+        color: $text-color1;
+    }
+    code {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: .85em;
+        background: $bg2-light;
+        padding: .15em .4em;
+        border-radius: 4px;
+    }
+    .notice {
+        background: $bg2-light;
+        border-left: 3px solid $button-color;
+        padding: 1rem 1.25rem;
+        margin: 1.5rem 0;
+        font-size: .9rem;
+    }
+    .see-also {
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid $border-color-light;
+        font-size: .9rem;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: $bg-dark;
@@ -218,6 +344,36 @@ footer{
             color: $bg-dark;
             background-color: $button-color-dark;
             outline-color: $button-color-dark;
+        }
+    }
+    .footer-links a, .footer-links span {
+        color: $text-color1-dark;
+    }
+    .site-header .wordmark {
+        color: $button-color-dark;
+    }
+    .page {
+        h1, h2, h3 {
+            color: #E8E8E5;
+        }
+        .updated {
+            color: $text-color1-dark;
+        }
+        a {
+            color: $button-color-dark;
+        }
+        th, td {
+            border-bottom-color: $border-color-dark2;
+        }
+        code {
+            background: $card-bg-dark;
+        }
+        .notice {
+            background: $card-bg-dark;
+            border-left-color: $button-color-dark;
+        }
+        .see-also {
+            border-top-color: $border-color-dark2;
         }
     }
 }

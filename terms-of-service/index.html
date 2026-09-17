@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | DERFEL Matrix Chat</title>
+    <meta name="description" content="Terms of Service for the DERFEL Matrix homeserver at derfel.dev — eligibility, acceptable use, federation, bridges, and availability.">
+    <link rel="canonical" href="https://derfel.dev/terms-of-service/">
+
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="/images/favicon-dark.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <meta property="og:site_name" content="DERFEL">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Terms of Service | DERFEL Matrix Chat">
+    <meta property="og:description" content="Terms for using the DERFEL Matrix homeserver at derfel.dev — eligibility, acceptable use, federation, bridges, and availability.">
+    <meta property="og:url" content="https://derfel.dev/terms-of-service/">
+    <meta property="og:image" content="https://derfel.dev/images/derfel-og.jpg">
+</head>
+
+<body>
+    <a class="site-header" href="/">
+        <picture>
+            <source srcset="/images/derfel-mark-dark.svg" media="(prefers-color-scheme: dark)">
+            <img src="/images/derfel-mark.svg" alt="" width="44" height="44">
+        </picture>
+        <span class="wordmark">DERFEL</span>
+    </a>
+
+    <main class="page">
+        <h1>Terms of Service</h1>
+        <p class="updated">Matrix chat service · derfel.dev · Last updated 17 September 2026</p>
+
+        <div class="notice">
+            This is a plain-language description of the terms under which this personal,
+            single-operator Matrix service is offered — written by the person who runs it, not by
+            a lawyer. It is not a substitute for legal advice, and the governing-law clause below
+            is deliberately left open rather than guessed at; get that reviewed by a lawyer before
+            treating this as a binding legal document.
+        </div>
+
+        <h2>1. Acceptance</h2>
+        <p>
+            By using an account on <code>derfel.dev</code> / <code>matrix.derfel.dev</code>, or the
+            <code>chat.dimov.xyz</code> client, you agree to these terms. If you don't agree,
+            don't use the service — since it's access-gated (see below), that mainly means not
+            signing in.
+        </p>
+
+        <h2>2. What this is</h2>
+        <p>
+            This is a personal Matrix homeserver run by Pavel Dimov as an individual, not as a
+            company or commercial service. It's offered as-is, without a service-level agreement,
+            to people connected to the <code>dimov.xyz</code> Google Workspace organization.
+        </p>
+
+        <h2>3. Eligibility and access</h2>
+        <p>
+            There is no public sign-up. Accounts are provisioned for members of the
+            <code>dimov.xyz</code> Google Workspace, and login happens exclusively through Google
+            Workspace SSO. Having access doesn't guarantee you'll keep it — see section 8.
+        </p>
+
+        <h2>4. Acceptable use</h2>
+        <p>You agree not to use the service to:</p>
+        <ul>
+            <li>Break the law, or the terms of service of any platform reached through a bridge (section 6)</li>
+            <li>Harass, abuse, or attempt to compromise the accounts or devices of other users</li>
+            <li>Send spam, or use the service's federation or bridges to relay unsolicited bulk messages onto other platforms</li>
+            <li>Attempt to circumvent the access controls described in section 3</li>
+            <li>Knowingly overload, disrupt, or attack the server or its federation/bridge connections</li>
+        </ul>
+
+        <h2>5. Federation</h2>
+        <p>
+            Federation is enabled. Using this service to communicate with anyone on another
+            Matrix homeserver means your messages, profile data, and shared media are sent to and
+            held by that homeserver as well as ours, under its own policies, indefinitely or
+            otherwise, entirely outside our control. By using federated rooms or DMs, you accept
+            that this is how the Matrix protocol works.
+        </p>
+
+        <h2>6. Bridges</h2>
+        <p>
+            This server runs bridges to a number of third-party platforms (the full, current list
+            is in the <a href="/privacy-policy/#bridges">Privacy Policy</a>). Any conversation you
+            have through a bridged room is, on the other side of that bridge, subject to that
+            platform's own terms of service — using a bridge means you accept those terms too, for
+            that platform, in addition to these.
+        </p>
+
+        <h2>7. Availability</h2>
+        <p>
+            This is a personally-run, single-operator service. There is no uptime guarantee or
+            SLA. Live status is published at
+            <a href="https://status.derfel.dev" target="_blank" rel="noopener">status.derfel.dev</a>.
+            The service may be paused, changed, or shut down at the operator's discretion, with
+            reasonable notice where practical.
+        </p>
+
+        <h2>8. Suspension and termination</h2>
+        <p>
+            An account may be suspended or deactivated — by the admin, without prior notice in
+            serious cases — for violating section 4, for security reasons, or simply because
+            you're no longer part of the <code>dimov.xyz</code> Workspace organization the account
+            was provisioned for. You can also request deactivation and erasure of your own account
+            at any time; see the <a href="/privacy-policy/">Privacy Policy</a> for how.
+        </p>
+
+        <h2>9. Data</h2>
+        <p>
+            What data is processed, how federation and bridges affect it, and how long it's kept
+            are all described in detail in the <a href="/privacy-policy/">Privacy Policy</a>,
+            which forms part of these terms.
+        </p>
+
+        <h2>10. No warranty, limitation of liability</h2>
+        <p>
+            The service is provided "as is," by an individual, without warranties of any kind,
+            express or implied — including as to availability, fitness for a particular purpose,
+            or security beyond what's described in the Privacy Policy. To the fullest extent
+            permitted by applicable law, the operator isn't liable for damages arising from your
+            use of, or inability to use, the service.
+        </p>
+
+        <h2>11. Governing law</h2>
+        <p>
+            <em>[This clause intentionally left unspecified.]</em> Which jurisdiction's law
+            governs these terms depends on facts about the operator that shouldn't be guessed at
+            in a generated document — get this filled in by a lawyer rather than relying on an
+            assumption.
+        </p>
+
+        <h2>12. Changes to these terms</h2>
+        <p>
+            If how the service is actually run changes in a way that affects these terms, this
+            page will be updated to match. Check the "last updated" date above.
+        </p>
+
+        <h2>13. Contact</h2>
+        <p>
+            <code>@pavel:derfel.dev</code> (Matrix) · <a href="mailto:help@dimov.xyz">help@dimov.xyz</a> (email)
+        </p>
+
+        <div class="see-also">
+            See also: <a href="/privacy-policy/">Privacy Policy</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="/privacy-policy/">Privacy Policy</a>
+            <span>·</span>
+            <a href="/terms-of-service/">Terms of Service</a>
+        </div>
+        <small>
+            &copy; Copyright 2023-2026 DerFel.dev - Innovating with Open Source
+        </small>
+    </footer>
+</body>
+
+</html>

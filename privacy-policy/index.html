@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | DERFEL Matrix Chat</title>
+    <meta name="description" content="Privacy Policy for the DERFEL Matrix homeserver at derfel.dev — federation, bridges, data retention, and how to request erasure.">
+    <link rel="canonical" href="https://derfel.dev/privacy-policy/">
+
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="/images/favicon-dark.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <meta property="og:site_name" content="DERFEL">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Privacy Policy | DERFEL Matrix Chat">
+    <meta property="og:description" content="How the DERFEL Matrix homeserver at derfel.dev handles your data — federation, bridges, retention, and erasure requests.">
+    <meta property="og:url" content="https://derfel.dev/privacy-policy/">
+    <meta property="og:image" content="https://derfel.dev/images/derfel-og.jpg">
+</head>
+
+<body>
+    <a class="site-header" href="/">
+        <picture>
+            <source srcset="/images/derfel-mark-dark.svg" media="(prefers-color-scheme: dark)">
+            <img src="/images/derfel-mark.svg" alt="" width="44" height="44">
+        </picture>
+        <span class="wordmark">DERFEL</span>
+    </a>
+
+    <main class="page">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Matrix chat service · derfel.dev · Last updated 17 September 2026</p>
+
+        <div class="notice">
+            This page is a plain-language, factual description of how <code>derfel.dev</code>'s
+            Matrix service actually handles data — written by the person who runs it, not by a
+            lawyer. It is not a substitute for legal advice. If you need a legally binding privacy
+            notice for compliance purposes, have it reviewed by a qualified lawyer before relying
+            on it.
+        </div>
+
+        <h2>1. Who runs this service</h2>
+        <p>
+            The Matrix homeserver at <code>derfel.dev</code> (server name <code>matrix.derfel.dev</code>)
+            is operated by Pavel Dimov as an individual — this is a personal project, not a
+            registered company. Contact for anything in this policy: <code>@pavel:derfel.dev</code>
+            on Matrix, or <a href="mailto:help@dimov.xyz">help@dimov.xyz</a> by email.
+        </p>
+
+        <h2>2. What this covers</h2>
+        <p>
+            This policy covers the <code>derfel.dev</code> / <code>matrix.derfel.dev</code>
+            homeserver and the <code>chat.dimov.xyz</code> web client (a branded deployment of
+            Element Web) used to access it. It does not cover third-party Matrix clients you may
+            choose to use instead, or the platforms reached through bridges (see section 6) —
+            those are covered by their own privacy policies.
+        </p>
+
+        <h2>3. Who can use it, and how you sign in</h2>
+        <p>
+            Public self-registration is closed — there is no sign-up form. Access is granted
+            through Google Workspace single sign-on for the <code>dimov.xyz</code> Workspace
+            organization. If you have an account, it's because it was set up for you as part of
+            that organization.
+        </p>
+
+        <h2>4. What data we process</h2>
+        <p>Running a Matrix homeserver necessarily involves processing:</p>
+        <ul>
+            <li>Account identifiers — your Matrix ID, display name, avatar, and the Workspace
+                identity your login is linked to</li>
+            <li>The content and metadata of messages in rooms you're a member of, for as long as
+                you're a member of them</li>
+            <li>Device and session information, including end-to-end encryption key material
+                needed for encrypted rooms to work</li>
+            <li>Media you upload or that's sent to rooms you're in</li>
+            <li>Standard server logs (connection metadata, error logs) kept for operational
+                troubleshooting</li>
+        </ul>
+
+        <h2>5. Federation — talking to people on other servers</h2>
+        <p>
+            Federation is <strong>enabled</strong> on this homeserver. Matrix is a decentralized
+            protocol: if you're in a room with someone on a different homeserver, or you message
+            them directly, your messages, profile information, and any shared media are sent to
+            and stored by their homeserver as well as ours — not just to make delivery possible,
+            but for as long as that server chooses to keep them.
+        </p>
+        <p>
+            We have no control over how another homeserver stores, retains, or otherwise handles
+            data once it's been federated to it. If privacy from a specific counterpart matters to
+            you, keep in mind that federated conversations are, in a real sense, held on
+            infrastructure we don't operate and can't erase data from on your behalf.
+        </p>
+
+        <h2 id="bridges">6. Bridges — talking to people on other platforms</h2>
+        <p>
+            This server runs bridges connecting Matrix rooms to a number of third-party chat
+            platforms. If you use a bridged room or DM, your messages and media are relayed
+            through — and processed by — that platform's own infrastructure, under its own terms
+            and privacy policy. We only control what happens on the Matrix side; the moment a
+            message crosses a bridge, the other platform's rules apply to that copy of it.
+        </p>
+        <table>
+            <thead>
+                <tr><th>Platform</th><th>Bridge</th><th>Their privacy policy</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Telegram</td><td><code>mautrix-telegram</code></td><td><a href="https://telegram.org/privacy" target="_blank" rel="noopener">telegram.org/privacy</a></td></tr>
+                <tr><td>WhatsApp</td><td><code>mautrix-whatsapp</code></td><td><a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener">whatsapp.com/legal/privacy-policy</a></td></tr>
+                <tr><td>Signal</td><td><code>mautrix-signal</code></td><td><a href="https://signal.org/legal/" target="_blank" rel="noopener">signal.org/legal</a></td></tr>
+                <tr><td>Discord</td><td><code>mautrix-discord</code></td><td><a href="https://discord.com/privacy" target="_blank" rel="noopener">discord.com/privacy</a></td></tr>
+                <tr><td>Slack</td><td><code>mautrix-slack</code></td><td><a href="https://slack.com/trust/privacy/privacy-policy" target="_blank" rel="noopener">slack.com/trust/privacy-policy</a></td></tr>
+                <tr><td>Twitter / X</td><td><code>mautrix-twitter</code></td><td><a href="https://x.com/en/privacy" target="_blank" rel="noopener">x.com/en/privacy</a></td></tr>
+                <tr><td>LinkedIn</td><td><code>mautrix-linkedin</code></td><td><a href="https://www.linkedin.com/legal/privacy-policy" target="_blank" rel="noopener">linkedin.com/legal/privacy-policy</a></td></tr>
+                <tr><td>Google Chat</td><td><code>mautrix-googlechat</code></td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
+                <tr><td>Google Voice</td><td><code>mautrix-gvoice</code></td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
+                <tr><td>Bluesky</td><td><code>mautrix-bluesky</code></td><td><a href="https://bsky.social/about/support/privacy-policy" target="_blank" rel="noopener">bsky.social/support/privacy-policy</a></td></tr>
+                <tr><td>Messenger (Meta)</td><td><code>mautrix-meta-messenger</code></td><td><a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">facebook.com/privacy/policy</a></td></tr>
+                <tr><td>Instagram (Meta)</td><td><code>mautrix-meta-instagram</code></td><td><a href="https://privacycenter.instagram.com/policy/" target="_blank" rel="noopener">privacycenter.instagram.com/policy</a></td></tr>
+            </tbody>
+        </table>
+
+        <h2>7. How long we keep data</h2>
+        <p>These are the actual retention settings configured on this server:</p>
+        <table>
+            <thead>
+                <tr><th>Data</th><th>Retention</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Room messages, in general</td><td>Not automatically deleted — chat history is kept intentionally, indefinitely, unless you or an admin removes it</td></tr>
+                <tr><td>Redacted (deleted) message content</td><td>Purged permanently 7 days after redaction</td></tr>
+                <tr><td>Rooms you've left and forgotten</td><td>Removed from the database after 28 days</td></tr>
+                <tr><td>Local media, including files sent through bridges</td><td>120 days</td></tr>
+                <tr><td>Remote / federated media cache</td><td>30 days — this is only our local cached copy; the original file remains on the sending server, outside our control</td></tr>
+            </tbody>
+        </table>
+
+        <h2>8. Security</h2>
+        <p>
+            End-to-end encryption is available and supported for rooms that use it, in line with
+            standard Matrix/Element functionality. Traffic to and from the server is encrypted in
+            transit (TLS). As with any single-operator service, treat this as a reasonably but not
+            exhaustively secured personal infrastructure project rather than an audited enterprise
+            platform.
+        </p>
+
+        <h2>9. Your rights, and how to exercise them</h2>
+        <p>
+            You can ask to have your account deactivated and your data erased at any time — this
+            is a real, working procedure on this server, not a formality. Contact
+            <code>@pavel:derfel.dev</code> or <a href="mailto:help@dimov.xyz">help@dimov.xyz</a>
+            to request it. Because this is a one-person operation, requests for access,
+            correction, or erasure are handled directly and personally rather than through a
+            formal privacy team — expect a direct reply, not a ticketing system.
+        </p>
+        <p>
+            Erasure of your account and local data does not retroactively remove copies that
+            federation or bridges have already sent to other servers or platforms (see sections 5
+            and 6) — those need to be requested from the party that holds them.
+        </p>
+
+        <h2>10. Changes to this policy</h2>
+        <p>
+            If the server's configuration changes in a way that affects this policy — different
+            retention periods, new or removed bridges, federation being disabled — this page will
+            be updated to reflect the actual, current setup. Check the "last updated" date above.
+        </p>
+
+        <h2>11. Contact</h2>
+        <p>
+            <code>@pavel:derfel.dev</code> (Matrix) · <a href="mailto:help@dimov.xyz">help@dimov.xyz</a> (email)
+        </p>
+
+        <div class="see-also">
+            See also: <a href="/terms-of-service/">Terms of Service</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="/privacy-policy/">Privacy Policy</a>
+            <span>·</span>
+            <a href="/terms-of-service/">Terms of Service</a>
+        </div>
+        <small>
+            &copy; Copyright 2023-2026 DerFel.dev - Innovating with Open Source
+        </small>
+    </footer>
+</body>
+
+</html>
