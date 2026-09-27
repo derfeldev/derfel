@@ -1,6 +1,6 @@
 # DERFEL
 
-[derfel.dev](https://derfel.dev) — DERFEL's open-source solutions, part of the [DIMOV](https://www.dimov.xyz) ecosystem.
+[derfel.dev](https://derfel.dev) - DERFEL's open-source solutions, part of the [DIMOV](https://www.dimov.xyz) ecosystem.
 
 A small static site: no build step, no framework, no dependencies. Plain HTML, CSS and a couple of edge functions, deployed on [Cloudflare Pages](https://pages.cloudflare.com/).
 
@@ -18,13 +18,13 @@ site.webmanifest       PWA manifest for "Add to Home Screen"
 
 ## Brand
 
-- Mark: three vertical axes, a looping curve, a pulsing core node — `images/derfel-mark.svg`
+- Mark: three vertical axes, a looping curve, a pulsing core node - `images/derfel-mark.svg`
 - Type: [Geist](https://vercel.com/font) for text, [JetBrains Mono](https://www.jetbrains.com/lp/mono/) for the wordmark
-- Light and dark themes follow `prefers-color-scheme` automatically, no JS — the SVG mark and favicon carry their own embedded dark-mode styles so they theme correctly even loaded through `<img>`
+- Light and dark themes follow `prefers-color-scheme` automatically, no JS - the SVG mark and favicon carry their own embedded dark-mode styles so they theme correctly even loaded through `<img>`
 
 ## Local development
 
-No build tooling needed — open `index.html` directly, or serve the directory with anything static:
+No build tooling needed - open `index.html` directly, or serve the directory with anything static:
 
 ```bash
 python3 -m http.server 8000
