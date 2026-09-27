@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DERFEL | Open Source Solutions</title>
-    <meta name="description" content="Discover DERFEL's open-source solutions. Maximize efficiency, lower costs, and integrate seamlessly with DIMOV's expertise. Explore today!">
+    <meta name="description" content="DERFEL — open-source solutions, part of the DIMOV ecosystem.">
     <link rel="canonical" href="https://derfel.dev/">
 
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" media="(prefers-color-scheme: light)">
@@ -20,9 +20,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="DERFEL">
 
-    <link rel="preload" as="image" href="/images/derfel-mark.svg" media="(prefers-color-scheme: light)">
-    <link rel="preload" as="image" href="/images/derfel-mark-dark.svg" media="(prefers-color-scheme: dark)">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/scripts/theme.js"></script>
 
     <meta property="og:site_name" content="DERFEL">
     <meta property="og:type" content="website">
@@ -30,15 +29,15 @@
     <meta property="og:title" content="DERFEL: Open Source Solutions | Innovating with Open Source">
     <meta property="og:description" content="DERFEL offers innovative open-source solutions to empower businesses. Experience seamless integration and cost-effective technology with DIMOV.">
     <meta property="og:url" content="https://derfel.dev/">
-    <meta property="og:image" content="https://derfel.dev/images/derfel-og.jpg">
+    <meta property="og:image" content="https://derfel.dev/images/derfel-og.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="DERFEL — Open Source Solutions, part of DIMOV">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="DERFEL: Open Source Solutions | Innovating with Open Source">
-    <meta name="twitter:description" content="DERFEL offers innovative open-source solutions to empower businesses. Experience seamless integration and cost-effective technology with DIMOV.">
-    <meta name="twitter:image" content="https://derfel.dev/images/derfel-og.jpg">
+    <meta name="twitter:title" content="DERFEL | Open Source Solutions">
+    <meta name="twitter:description" content="DERFEL — open-source solutions, part of the DIMOV ecosystem.">
+    <meta name="twitter:image" content="https://derfel.dev/images/derfel-og.png">
     <meta name="twitter:image:alt" content="DERFEL — Open Source Solutions, part of DIMOV">
 
     <script type="application/ld+json">
@@ -56,8 +55,13 @@
             "width": 44,
             "height": 44
           },
-          "image": "https://derfel.dev/images/derfel-og.jpg",
+          "image": "https://derfel.dev/images/derfel-og.png",
           "description": "Open source solutions for business — seamless integration, lower costs and cost-effective technology.",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "DIMOV",
+            "url": "https://www.dimov.xyz"
+          },
           "sameAs": [
             "https://github.com/derfeldev"
           ]
@@ -77,18 +81,36 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <main class="container">
-            <picture>
-                <source srcset="images/derfel-mark-dark.svg" media="(prefers-color-scheme: dark)">
-                <img src="images/derfel-mark.svg" alt="DERFEL logo" class="logo" width="400" height="400" fetchpriority="high">
-            </picture>
-            <div class="header">
-                <h1><b>DERFEL</b> | Open Source Solutions</h1>
-                <p class="brand-tag">PART OF DIMOV</p>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="site">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
+            <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.8"/><line x1="12" y1="1.5" x2="12" y2="4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="12" y1="20" x2="12" y2="22.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="1.5" y1="12" x2="4" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="20" y1="12" x2="22.5" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="4.4" y1="4.4" x2="6.1" y2="6.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="17.9" y1="17.9" x2="19.6" y2="19.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="4.4" y1="19.6" x2="6.1" y2="17.9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="17.9" y1="6.1" x2="19.6" y2="4.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><mask id="derfel-moon-mask"><rect x="0" y="0" width="24" height="24" fill="#fff"/><circle cx="15" cy="9" r="7" fill="#000"/></mask><circle cx="12" cy="12" r="8.5" fill="currentColor" mask="url(#derfel-moon-mask)"/></svg>
+        </button>
+
+        <main id="main" class="hero">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="hero-inner">
+                <div class="hero-logo" role="img" aria-label="DERFEL logo">
+                    <svg viewBox="0 0 44 44" width="156" height="156" fill="none">
+                        <g stroke-width="1.5" stroke-linecap="round">
+                            <path d="M12 12v20"/>
+                            <path d="M34 12v20"/>
+                            <path d="M22 7v12"/>
+                            <path d="M22 25v12"/>
+                            <path d="M22 14c3.31 0 6 3.58 6 8s-2.69 8-6 8"/>
+                        </g>
+                        <circle cx="22" cy="22" r="1.7"/>
+                    </svg>
+                </div>
+                <h1 class="hero-title">DERFEL</h1>
+                <p class="hero-sub">Open Source Solutions</p>
+                <p class="hero-tag">PART OF DIMOV</p>
             </div>
         </main>
-        <footer>
+
+        <footer class="site-footer">
             <div class="social">
                 <a href="https://github.com/derfeldev" class="social-link" aria-label="DERFEL on GitHub (opens in a new tab)" rel="me noopener" target="_blank">
                     <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
@@ -105,12 +127,9 @@
                 <span>·</span>
                 <a href="/terms-of-service/">Terms of Service</a>
             </div>
-            <small>
-                &copy; Copyright 2023-2026 DerFel.dev - Innovating with Open Source
-            </small>
+            <small class="copyright">&copy; Copyright 2023-<span data-year>2026</span> DerFel.dev - Innovating with Open Source</small>
         </footer>
     </div>
-
 </body>
 
 </html>

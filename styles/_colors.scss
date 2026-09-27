@@ -1,17 +1,34 @@
-$button-color:#3A63D0;
-$border-color:hsl(223, 100%, 88%);
-$error:hsl(354, 100%, 66%);
-$text-color1:#6B6B67;
-$text-color2:#3A63D0;
-$text-color2-ink:#1A1A1A;
-$border-color-light:#E4E4E0;
-$bg2-light:#F6F6F4;
-$core:#4F7DF3;
+// Design tokens per theme. Emitted as CSS custom properties in style.scss.
+$light: (
+  bg: #FFFFFF,
+  text: #6B6B67,
+  accent: #3A63D0,
+  border: hsl(223, 100%, 88%),
+  icon-border: #8C8C87,
+  glow: rgba(79, 125, 243, 0.10),
+  stroke: #1A1A1A,
+  core: #4F7DF3,
+  toggle-hover-bg: #EDEEF0,
+  toggle-hover-icon: #264A9E,
+  notice-bg: rgba(58, 99, 208, 0.05),
+  th-bg: rgba(58, 99, 208, 0.06),
+  link-hover: #294FA8,
+  on-accent: #FFFFFF
+);
 
-// dark mode (prefers-color-scheme)
-$bg-dark:#141414;
-$button-color-dark:#7AA2F7;
-$text-color1-dark:#8C8C87;
-$border-color-dark:#6B6B67;
-$border-color-dark2:#2B2B2B;
-$card-bg-dark:#191919;
+$dark: (
+  bg: #141414,
+  text: #8C8C87,
+  accent: #7AA2F7,
+  border: #6B6B67,
+  icon-border: #6B6B67,
+  glow: rgba(122, 162, 247, 0.14),
+  stroke: #E8E8E5,
+  core: #7AA2F7,
+  toggle-hover-bg: #1B1B1B,
+  toggle-hover-icon: #5A82D6,
+  notice-bg: rgba(122, 162, 247, 0.08),
+  th-bg: rgba(122, 162, 247, 0.08),
+  link-hover: #9FBBF9,
+  on-accent: #141414
+);
